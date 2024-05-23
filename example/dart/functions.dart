@@ -57,7 +57,7 @@ Future<void> nestedGeometryCollection() async {
     final dynamic geometry = feature.geometry;
 
     if (geometry is GeoJsonGeometryCollection) {
-      print("${geometry.name}: " + "${geometry.geometries.length} collections");
+      print("${geometry.name}: " + "${geometry.geometries?.length} collections");
     }
   }
 }
